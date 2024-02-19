@@ -8,13 +8,21 @@
     "preview": "vite preview",
     "start": "rm -rf DO_NOT_COMIT_STYLES_FILE_OUTPUT.css && npm run twild &&  npm run dev",
     "build": "tsc && vite build && npx tailwindcss -o ./dist/styles.css --minify",
-    "twbuild": "npx tailwindcss -i ./src/index.css -o ./DO_NOT_COMIT_STYLES_FILE_OUTPUT.css --watch",
-    "twild": "npx tailwindcss -i ./src/index.css -o ./DO_NOT_COMIT_STYLES_FILE_OUTPUT.css",
+    "twbuild": "npx tailwindcss -i ./src/styles/index.css -o ./styles.css --watch",
+    "twild": "npx tailwindcss -i ./src/styles/index.css -o ./styles.css",
     "simple": "rm -rf DO_NOT_COMIT_STYLES_FILE_OUTPUT.css && npx tailwindcss build -o ./DO_NOT_COMIT_STYLES_FILE_OUTPUT.css --watch"
   },
   "dependencies": {
+    "clsx": "^2.1.0",
+    "framer-motion": "^11.0.5",
+    "localforage": "^1.10.0",
+    "match-sorter": "^6.3.4",
+    "mini-svg-data-uri": "^1.4.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.1",
+    "sort-by": "^1.2.0",
+    "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",
