@@ -1,9 +1,4 @@
-import { motion } from "framer-motion";
-import {
-  FloatingNav,
-  LampContainer,
-  TextGenerateEffect,
-} from "../../components";
+import { HeroComponent, ServicesComponent } from "../../components";
 
 const HomePage = () => {
   const words = `— Creating cool experiences is our thing!`;
@@ -11,56 +6,77 @@ const HomePage = () => {
     {
       name: "Portfolio",
       link: "/portfolio",
-      // icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Services",
       link: "/services",
-      // icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
-    // {
-    //   name: "Contact",
-    //   link: "/contact",
-    //   // icon: (<IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />),
-    // },
+  ];
+
+  const servicesArray = [
+    {
+      title: "Logo & Branding",
+      description:
+        "A technology company that builds economic infrastructure for the internet.",
+      link: "https://stripe.com",
+    },
+    {
+      title: "Graphic Designing",
+      link: "https://twitter.com/codeChaudhry",
+      description:
+        "Creating interactive products and services by moving beyond the item to know how users will operate the interfaces design that we've made",
+      image:
+        "https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif",
+    },
+    {
+      title: "Digital Marketing",
+      link: "https://twitter.com/codeChaudhry",
+      description:
+        "Creating interactive products and services by moving beyond the item to know how users will operate the interfaces design that we've made",
+      image: "",
+    },
+    {
+      title: "Web Development",
+      description:
+        "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+      link: "https://netflix.com",
+      image: "",
+    },
+    {
+      title: "Backend Development",
+      description:
+        "A multinational technology company that specializes in Internet-related services and products.",
+      link: "https://google.com",
+      image: "",
+    },
+    {
+      title: "E-Commerce Development",
+      description:
+        "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+      link: "https://meta.com",
+      image: "",
+    },
+    {
+      title: "Mobile Application Development",
+      description:
+        "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+      link: "https://amazon.com",
+      image: "",
+    },
+    {
+      title: "SalesForce Development",
+      description:
+        "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+      link: "https://microsoft.com",
+      image: "",
+    },
   ];
 
   return (
-    <>
-      <div className="h-[40rem] w-full flex md:items-center md:justify-center bg-black antialiased relative overflow-hidden">
-        <FloatingNav navItems={navItems} />
-        <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-8">
-          <LampContainer>
-            <motion.h1
-              initial={{ opacity: 0.3, y: 70 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: 0.3,
-                duration: 0.7,
-                ease: "easeInOut",
-              }}
-              className="mt-6 from-neutral-50 to-neutral-300 bg-opacity-50 text-4xl md:text-7xl font-bold text-center bg-gradient-to-br py-4 bg-clip-text tracking-tight text-transparent"
-            >
-              We Make Apps <br /> Websites &amp; Brands.
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0.3, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{
-                delay: 0.3,
-                duration: 0.7,
-                ease: "easeInOut",
-              }}
-            >
-              <TextGenerateEffect
-                words={words}
-                childClassName="font-normal text-base  max-w-lg text-center mx-auto"
-              />
-            </motion.p>
-          </LampContainer>
-        </div>
-      </div>
-    </>
+    <div className="bg-black">
+      <HeroComponent navLinkItems={navItems} subHeading={words} />
+      <ServicesComponent services={servicesArray} />
+    </div>
   );
 };
 

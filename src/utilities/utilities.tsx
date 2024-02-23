@@ -22,3 +22,21 @@ export type FloatingNavProps = {
   }[];
   className?: string;
 };
+
+export type HeroComponentProps = {
+  navLinkItems: {
+    name: string;
+    link: string;
+    icon?: JSX.Element | undefined;
+  }[];
+  subHeading: string;
+};
+
+export type ServiceComponentProps = {
+  services: {
+    title: string;
+    link: string;
+    description: string;
+    image?: string;
+  }[];
+};
