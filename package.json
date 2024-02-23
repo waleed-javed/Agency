@@ -4,13 +4,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start": "rm -rf DO_NOT_COMIT_STYLES_FILE_OUTPUT.css && npm run twild &&  npm run dev",
+    "start": "rm -rf ./src/styles/styles.css && npm run twild &&  npm run dev",
     "build": "tsc && vite build && npx tailwindcss -o ./dist/styles.css --minify",
-    "twbuild": "npx tailwindcss -i ./src/styles/index.css -o ./styles.css --watch",
-    "twild": "npx tailwindcss -i ./src/styles/index.css -o ./styles.css",
-    "simple": "rm -rf DO_NOT_COMIT_STYLES_FILE_OUTPUT.css && npx tailwindcss build -o ./DO_NOT_COMIT_STYLES_FILE_OUTPUT.css --watch"
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "twbuild": "npx tailwindcss -i ./src/styles/index.css -o ./src/styles/styles.css --watch",
+    "twild": "npx tailwindcss build -o ./src/styles/styles.css"
   },
   "dependencies": {
     "clsx": "^2.1.0",
@@ -25,6 +24,7 @@
     "tailwind-merge": "^2.2.1"
   },
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
