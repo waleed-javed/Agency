@@ -1,8 +1,10 @@
 import { default as PinCard } from "./ui/3dPin";
+import InfiniteBanner from "./ui/InfinityBanner";
 import { BackgroundBeams } from "./ui/beams";
 import HoverSensitiveCards from "./ui/cardHover";
 import { FloatingNav } from "./ui/floatingNavBar";
 import { TextGenerateEffect } from "./ui/generateTextEffect";
+import InfiniteMovingCards from "./ui/infinityCards";
 import { LampContainer } from "./ui/lampReveal";
 import { default as Spotlight } from "./ui/spotlight";
 import TracingBeam from "./ui/tracingBeams";
@@ -15,6 +17,8 @@ export {
   FloatingNav,
   HeroComponent,
   HoverSensitiveCards,
+  InfiniteBanner,
+  InfiniteMovingCards,
   LampContainer,
   PinCard,
   ServicesComponent,

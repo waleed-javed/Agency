@@ -74,7 +74,12 @@ const HomePage = () => {
 
   return (
     <div className="bg-black">
-      <HeroComponent navLinkItems={navItems} subHeading={words} />
+      <HeroComponent
+        navLinkItems={navItems}
+        subHeading={words}
+        bannerItems={servicesArray}
+      />
+
       <ServicesComponent services={servicesArray} />
     </div>
   );

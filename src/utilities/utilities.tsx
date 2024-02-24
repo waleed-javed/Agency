@@ -30,7 +30,27 @@ export type HeroComponentProps = {
     icon?: JSX.Element | undefined;
   }[];
   subHeading: string;
+  bannerItems: BannerItem;
 };
+
+export type BannerComponentProps = {
+  items: {
+    quote: string;
+    name: string;
+    title: string;
+  }[];
+  direction?: "left" | "right";
+  speed?: "fast" | "normal" | "slow";
+  pauseOnHover?: boolean;
+  className?: string;
+};
+
+export type BannerItem = {
+  title: string;
+  link?: string;
+  description?: string;
+  image?: string;
+}[];
 
 export type ServiceComponentProps = {
   services: {
