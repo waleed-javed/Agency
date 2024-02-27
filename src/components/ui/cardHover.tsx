@@ -30,7 +30,7 @@ const HoverSensitiveCards = ({
       {items.map((item, idx) => (
         <Link
           to={item?.link}
-          key={item?.link}
+          key={item?.link + idx}
           className="group relative  block h-full w-full p-2"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}

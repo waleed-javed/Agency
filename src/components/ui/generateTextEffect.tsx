@@ -19,11 +19,11 @@ export const TextGenerateEffect = ({
       "span",
       { opacity: 1 },
       {
-        duration: 2,
-        delay: stagger(0.2),
+        duration: 3,
+        delay: stagger(0.3),
       },
     );
-  }, [scope.current]);
+  });
 
   //   sub component to render animation
   const renderWords = () => {

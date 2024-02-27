@@ -18,11 +18,11 @@ const Service = ({ services }: ServiceComponentProps) => {
             duration: 0.7,
             ease: "easeIn",
           }}
-          className="relative z-20 bg-gradient-to-b from-neutral-50 to-neutral-500 bg-clip-text pb-4 pt-8 text-4xl font-bold text-transparent sm:text-7xl"
+          className="relative z-20 bg-gradient-to-b from-neutral-50 to-neutral-500 bg-clip-text text-4xl font-bold text-transparent sm:text-7xl"
         >
           Our Services
         </motion.p>
-        <TracingBeam className="mx-auto max-w-5xl px-8">
+        <TracingBeam className="relative mx-auto max-w-5xl px-8">
           <TextGenerateEffect
             words={"— We provide end-to-end solutions"}
             childClassName="font-normal text-xl max-w-lg text-center mx-auto"
