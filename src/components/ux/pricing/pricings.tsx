@@ -19,12 +19,12 @@ const PricingComponent = ({ pricingInfo }) => {
           >
             {pricingInfo.heading}
           </motion.h1>
-          <p className="mx-4 mt-4 max-w-2xl text-center text-sm text-gray-500 md:mx-auto md:text-lg dark:text-white ">
+          <div className="mx-4 mt-4 max-w-2xl text-center text-sm text-gray-500 md:mx-auto md:text-lg dark:text-white ">
             <TextGenerateEffect
               words={pricingInfo.subHeading}
               childClassName="font-normal text-xl max-w-lg text-center mx-auto"
             />
-          </p>
+          </div>
         </div>
       </div>
       <div className="relative z-10 mx-4 mt-20 grid h-fit grid-cols-1 content-center items-center gap-8 md:mx-8 lg:grid-cols-3">

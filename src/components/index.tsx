@@ -10,8 +10,10 @@ import { LampContainer } from "./ui/lampReveal";
 import PriceCard from "./ui/pricing";
 import { default as Spotlight } from "./ui/spotlight";
 import TracingBeam from "./ui/tracingBeams";
+import WavyBackground from "./ui/wavyBg";
 import Footer from "./ux/footer/footer";
-import { default as HeroComponent } from "./ux/hero/heroLampBeams";
+import HeroLampBeams from "./ux/hero/heroLampBeams";
+import { default as HeroComponent } from "./ux/hero/heroSection";
 import PricingComponent from "./ux/pricing/pricings";
 import { default as ServicesComponent } from "./ux/services/services";
 
@@ -21,6 +23,7 @@ export {
   FloatingNav,
   Footer,
   HeroComponent,
+  HeroLampBeams,
   HoverSensitiveCards,
   InfiniteBanner,
   InfiniteMovingCards,
@@ -32,4 +35,5 @@ export {
   Spotlight,
   TextGenerateEffect,
   TracingBeam,
+  WavyBackground,
 };

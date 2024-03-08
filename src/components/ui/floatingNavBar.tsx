@@ -119,7 +119,7 @@ export const NavBar = () => {
         )}
       >
         <div className="relative text-2xl font-medium text-white">
-          <span>Ghamiz</span>
+          <span>Invoternity</span>
         </div>
         {/* <div className="flex flex-row items-center justify-between space-x-12 rounded-full border border-transparent bg-white py-1 pl-8 pr-2  shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] dark:border-purple-500/[0.3] dark:bg-black ">
           {navItems.map((navItem, idx: number) => (
@@ -135,13 +135,13 @@ export const NavBar = () => {
             </Link>
           ))}
         </div> */}
-        <button className="relative rounded-full border border-neutral-200 py-1 pl-6 pr-3 text-sm font-medium text-black dark:border-white/[0.2] dark:text-white">
-          <div className="flex items-center gap-x-1">
-            <span>Book a call</span>
+        <button className="relative rounded-full border border-neutral-200 py-1 text-sm font-medium text-black dark:border-white/[0.2] dark:text-white">
+          <div className="flex items-center gap-x-1 pl-3 pr-2">
+            <h6>Book a call</h6>
             <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
+              width="16"
+              height="18"
+              viewBox="2 1 20 20"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
